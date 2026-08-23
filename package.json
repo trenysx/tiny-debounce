@@ -1,0 +1,34 @@
+{
+  "name": "tiny-debounce",
+  "version": "0.1.0",
+  "description": "Tiny debounce & throttle — 500 bytes gzipped, TypeScript types included, ESM-only, zero deps.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "debounce",
+    "throttle",
+    "rate-limit",
+    "typescript",
+    "esm",
+    "zero-dependency",
+    "tiny"
+  ],
+  "author": "trenysx",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=18.0.0" },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
